@@ -23,6 +23,10 @@ export class NgxMatomoClientModule {
             w._paq.push(['setCookieDomain', config.cookieDomain]);
         }
 
+        if (config.enableHeartBeatTimer) {
+            w._paq.push(['enableHeartBeatTimer', 10]);
+        }
+
         if (config.enableLinkTracking) {
             w._paq.push(['enableLinkTracking']);
         }

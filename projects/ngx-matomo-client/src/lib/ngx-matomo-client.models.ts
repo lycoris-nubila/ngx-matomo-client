@@ -1,4 +1,5 @@
 export class MatomoClientConfig {
+    enableHeartBeatTimer?: boolean;
     enableLinkTracking?: boolean;
     initTrackPageView?: boolean;
     endpointFile?: string;
